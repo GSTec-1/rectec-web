@@ -194,6 +194,7 @@ section[id] { scroll-margin-top: 90px; }
 
 /* ---------- Trabajos ---------- */
 .trabajos-cabecera { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; }
+.trabajos-instagram { font-weight: 700; }
 .trabajos-grilla { list-style: none; margin: 44px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
 .trabajo { background: var(--blanco); border: 1px solid var(--borde); border-radius: 16px; overflow: hidden; box-shadow: var(--sombra-suave); display: flex; flex-direction: column; }
 .trabajo img, .trabajo .foto-pendiente { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 0; box-shadow: none; }
@@ -222,6 +223,7 @@ section[id] { scroll-margin-top: 90px; }
   box-shadow: 0 1px 3px rgba(14, 72, 120, .05), 0 16px 40px rgba(14, 72, 120, .08);
 }
 .contacto-botones { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; padding-top: 8px; }
+.titulo-404 { font-size: clamp(1.85rem, 1.3rem + 2vw, 2.6rem); line-height: 1.15; font-weight: 800; color: var(--azul); letter-spacing: -0.015em; }
 .contacto-mail { font-size: 15px; color: var(--texto-2); overflow-wrap: anywhere; }
 .contacto-mail a { font-weight: 600; }
 

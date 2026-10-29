@@ -59,7 +59,7 @@
   <header class="encabezado">
     <div class="contenedor encabezado-fila">
       <a class="logo" href="#inicio" aria-label="RECTEC Servicios, ir al inicio">
-        <img src="img/logo-rectec.png" alt="RECTEC Servicios" width="651" height="160">
+        <img src="img/logo-rectec.webp" alt="RECTEC Servicios" width="520" height="128">
       </a>
 
       <button class="menu-boton" id="menu-boton" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
@@ -101,11 +101,8 @@
         <div class="portada-foto">
           <!--
             FOTO DE PORTADA (actual: oficina en Recoleta). Para cambiarla:
-            Cuando tengamos la foto real:
-            1) Guardarla como img/portada.webp
-            2) Borrar el bloque <div class="foto-pendiente">...</div>
-            3) Poner en su lugar esta línea (y completar la descripción):
-               <img src="img/portada.webp" alt="DESCRIBIR LA FOTO, ej: Técnico de RECTEC instalando un aire acondicionado" width="1200" height="1020" fetchpriority="high">
+            guardar la nueva foto como img/portada.webp y actualizar abajo
+            la descripción (alt) y las medidas (width y height).
           -->
           <img src="img/portada.webp" alt="Aire acondicionado split instalado por RECTEC en una oficina de Recoleta, con cañerías en canaleta" width="1600" height="1240" fetchpriority="high">
 
@@ -142,7 +139,7 @@
         <ul class="servicios-grilla">
           <li class="servicio">
             <div class="icono-cuadro"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3L4 14h7l-1 7 9-11h-7l1-7z"/></svg></div>
-            <div><h3>Electricidad</h3><p>Instalaciones completas en obra nueva y reformas, armado de tableros, cableado y reparaciones. Electricista matriculado.</p></div>
+            <div><h3>Electricidad</h3><p>Instalaciones completas en obra nueva y reformas, armado de tableros, cableado y reparaciones.</p></div>
           </li>
           <li class="servicio">
             <div class="icono-cuadro"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M4.9 6.5l14.2 11"/><path d="M19.1 6.5L4.9 17.5"/><path d="M9 4l3 2 3-2"/><path d="M9 20l3-2 3 2"/></svg></div>
@@ -194,7 +191,7 @@
             <h2 id="titulo-trabajos">Trabajos realizados</h2>
             <p class="seccion-bajada">Algunos de nuestros trabajos, con fotos reales.</p>
           </div>
-          <a href="https://www.instagram.com/rectec.servicios/" target="_blank" rel="noopener" style="font-weight:700">Ver más en Instagram</a>
+          <a class="trabajos-instagram" href="https://www.instagram.com/rectec.servicios/" target="_blank" rel="noopener">Ver más en Instagram</a>
         </div>
 
         <!--
@@ -232,10 +229,10 @@
             </div>
           </li>
           <li class="trabajo">
-            <img src="img/trabajos/split-temperley.webp" alt="Unidad exterior de aire acondicionado conectada a bomba de vacío y manómetros" width="828" height="621" loading="lazy">
+            <img src="img/trabajos/split-temperley.webp" alt="Reparación de un aire acondicionado split en Temperley: unidad exterior conectada a bomba de vacío y manómetros" width="828" height="621" loading="lazy">
             <div class="trabajo-texto">
               <p class="trabajo-tipo">Climatización</p>
-              <h3>Trabajo en equipo split</h3>
+              <h3>Reparación de equipo split</h3>
               <p class="trabajo-lugar">Temperley</p>
             </div>
           </li>
@@ -248,10 +245,11 @@
             </div>
           </li>
           <li class="trabajo">
-            <img src="img/trabajos/heladera-reparacion.webp" alt="Heladera en reparación con manómetros conectados al compresor" width="900" height="675" loading="lazy">
+            <img src="img/trabajos/heladera-reparacion.webp" alt="Heladera en reparación en el taller, con manómetros conectados al compresor" width="900" height="675" loading="lazy">
             <div class="trabajo-texto">
               <p class="trabajo-tipo">Refrigeración</p>
               <h3>Reparación de pinchadura en heladera</h3>
+              <p class="trabajo-lugar">En taller</p>
             </div>
           </li>
           <li class="trabajo">
@@ -287,17 +285,19 @@
             </div>
           </li>
           <li class="trabajo">
-            <img src="img/trabajos/bornera-trifasica.webp" alt="Conexión eléctrica trifásica en la bornera de un equipo" width="900" height="675" loading="lazy">
+            <img src="img/trabajos/bornera-trifasica.webp" alt="Conexión eléctrica trifásica en la bornera de un equipo, en Canning" width="900" height="675" loading="lazy">
             <div class="trabajo-texto">
               <p class="trabajo-tipo">Electricidad</p>
               <h3>Conexión eléctrica trifásica de equipo</h3>
+              <p class="trabajo-lugar">Canning</p>
             </div>
           </li>
           <li class="trabajo">
-            <img src="img/trabajos/tablero-circuitos.webp" alt="Tablero eléctrico con disyuntores, llaves térmicas y circuitos rotulados" width="900" height="675" loading="lazy">
+            <img src="img/trabajos/tablero-circuitos.webp" alt="Tablero eléctrico con disyuntores, llaves térmicas y circuitos rotulados, en Nordelta" width="900" height="675" loading="lazy">
             <div class="trabajo-texto">
               <p class="trabajo-tipo">Electricidad</p>
               <h3>Tablero eléctrico con circuitos identificados</h3>
+              <p class="trabajo-lugar">Nordelta</p>
             </div>
           </li>
         </ul>
@@ -328,7 +328,7 @@
           </li>
           <li class="servicio">
             <div class="icono-cuadro"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div>
-            <div><h3>Soluciones integrales</h3><p>Electricidad, climatización, refrigeración y calefacción en un mismo equipo, con electricista matriculado.</p></div>
+            <div><h3>Soluciones integrales</h3><p>Electricidad, climatización, refrigeración y calefacción en un mismo equipo.</p></div>
           </li>
         </ul>
       </div>
@@ -356,9 +356,10 @@
       <div class="contenedor">
         <div class="contacto-caja">
           <h2 id="titulo-contacto">¿Necesitás un técnico?</h2>
-          <p class="seccion-bajada">Escribinos por WhatsApp y contanos qué trabajo necesitás.</p>
+          <p class="seccion-bajada">Escribinos por WhatsApp o llamanos y contanos qué trabajo necesitás.</p>
           <div class="contacto-botones">
             <a class="boton boton-naranja" href="https://wa.me/5491124944735?text=Hola%20RECTEC%2C%20quiero%20consultar%20por%20un%20trabajo." target="_blank" rel="noopener">Escribir al 11 2494-4735</a>
+            <a class="boton boton-borde" href="tel:+5491124944735">Llamar al 11 2494-4735</a>
             <a class="boton boton-borde" href="https://www.instagram.com/rectec.servicios/" target="_blank" rel="noopener">@rectec.servicios</a>
           </div>
           <p class="contacto-mail">También podés escribirnos a <a href="mailto:gstecrefrigeracion@gmail.com">gstecrefrigeracion@gmail.com</a></p>
@@ -370,7 +371,7 @@
   <!-- ================= PIE ================= -->
   <footer class="pie">
     <div class="contenedor pie-fila">
-      <img src="img/logo-rectec.png" alt="RECTEC Servicios" width="651" height="160" loading="lazy">
+      <img src="img/logo-rectec.webp" alt="RECTEC Servicios" width="520" height="128" loading="lazy">
       <p>CABA y Gran Buenos Aires · <a href="mailto:gstecrefrigeracion@gmail.com">gstecrefrigeracion@gmail.com</a></p>
     </div>
   </footer>
